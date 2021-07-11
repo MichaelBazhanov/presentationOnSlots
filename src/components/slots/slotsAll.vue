@@ -46,13 +46,21 @@
     <hr class="bg-white h-1">
 
     <slotScopedHard :items="arr">
-      <!-- <template v-slot:default="slotsProps">
+      <template v-slot:default="slotsProps">
         <h1 class="bg-red-100"> {{ slotsProps.element }}</h1>
-      </template> -->
+      </template>
       <template #test="{element}">
         <h2 class="bg-blue-100"> {{element}}</h2>
       </template>
     </slotScopedHard>
+
+    <hr class="bg-white h-1">
+
+    <slotValueDefault>
+      <template #footer>
+        footer
+      </template>
+    </slotValueDefault>
 
     <hr class="bg-white h-1">
 
@@ -95,6 +103,7 @@ import slotScopedHard from "./slotScopedHard";
 import slotTest from "./slotTest";
 import slotNameDynamic from "./slotNameDynamic";
 import slotClickEmit from "./slotClickEmit";
+import slotValueDefault from "./slotValueDefault";
 
 export default {
   components: {
@@ -106,6 +115,7 @@ export default {
     slotTest,
     slotNameDynamic,
     slotClickEmit,
+    slotValueDefault,
   },
   data() {
     return {
