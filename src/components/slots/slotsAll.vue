@@ -52,8 +52,8 @@
     <slotTest v-slot:default="slotsProps" :items="arr">
       <h5>{{slotsProps.test}}</h5>
     </slotTest>
-    <slotTest v-slot:default="slotsProps" :items="arr">
-    </slotTest>
+    <!-- <slotTest v-slot:default="slotsProps" :items="arr">
+    </slotTest> -->
 
     <hr class="bg-black h-2">
 
