@@ -64,11 +64,11 @@
 
     <hr class="bg-white h-1">
 
-    <slotTest v-slot:default="slotsProps" :items="arr">
+    <slotDefaultAbbreviatedSyntax v-slot:default="slotsProps" :items="arr" class="bg-purple-100">
       <h5>{{slotsProps.test}}</h5>
-    </slotTest>
-    <!-- <slotTest v-slot:default="slotsProps" :items="arr">
-    </slotTest> -->
+    </slotDefaultAbbreviatedSyntax>
+    <slotDefaultAbbreviatedSyntax slot="default" :items="arr">
+    </slotDefaultAbbreviatedSyntax>
 
     <hr class="bg-white h-1">
 
@@ -100,7 +100,7 @@ import slotNamed from "./slotNamed";
 import slotScopedEasy from "./slotScopedEasy";
 import slotScopedMedium from "./slotScopedMedium";
 import slotScopedHard from "./slotScopedHard";
-import slotTest from "./slotTest";
+import slotDefaultAbbreviatedSyntax from "./slotDefaultAbbreviatedSyntax";
 import slotNameDynamic from "./slotNameDynamic";
 import slotClickEmit from "./slotClickEmit";
 import slotValueDefault from "./slotValueDefault";
@@ -112,7 +112,7 @@ export default {
     slotScopedEasy,
     slotScopedMedium,
     slotScopedHard,
-    slotTest,
+    slotDefaultAbbreviatedSyntax,
     slotNameDynamic,
     slotClickEmit,
     slotValueDefault,
