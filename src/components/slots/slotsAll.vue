@@ -5,7 +5,7 @@
       <h3>slotDefault</h3>
     </slotDefault>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotNamed>
       <h1 slot="header">header</h1>
@@ -18,12 +18,19 @@
         <h3>footer</h3>
       </template>
 
+      <!-- <template #default>
+        <h3>default</h3>
+      </template> -->
+      <!-- <template v-slot:default>
+        <h2>default</h2>
+      </template> -->
+
       <p>default 1</p>
       <p>default 2</p>
       <p>default 3</p>
     </slotNamed>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotScopedEasy>
       <template slot-scope="slotsProps">
@@ -31,12 +38,12 @@
       </template>
     </slotScopedEasy>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotScopedMedium :items="arr">
     </slotScopedMedium>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotScopedHard :items="arr">
       <template v-slot:default="slotsProps">
@@ -47,7 +54,7 @@
       </template>
     </slotScopedHard>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotTest v-slot:default="slotsProps" :items="arr">
       <h5>{{slotsProps.test}}</h5>
@@ -55,7 +62,7 @@
     <!-- <slotTest v-slot:default="slotsProps" :items="arr">
     </slotTest> -->
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotNameDynamic @click.native="nextName()">
       <template  v-slot:[idxName]>
@@ -63,7 +70,7 @@
       </template>
     </slotNameDynamic>
 
-    <hr class="bg-black h-2">
+    <hr class="bg-white h-1">
 
     <slotClickEmit @onClick="click">
       <template #clickEmit >
