@@ -86,25 +86,11 @@
       </template>
     </slotClickEmitParent>
 
-    <!-- slotClickEmitSlot -->
-
     <slotClickEmitChild>
       <template #emit >
         <h1 @click="$emit('childClick', 'childClick')">slotClickEmitChild</h1>
       </template>
     </slotClickEmitChild>
-
-    <slotClickEmitChildInterception @childClickInterception="childClickInterception">
-      <template #emit >
-        <h1 @click="$emit('childClickInterception', 'childClickInterception')">slotClickEmitChildInterception</h1>
-      </template>
-    </slotClickEmitChildInterception>
-
-    <!-- <slotClickEmit @onClick="click2">
-      <template #clickEmit >
-        <h1 @click="$emit('onClick', 'onClick parent')">slotClickEmit 2</h1>
-      </template>
-    </slotClickEmit> -->
 
   </div>
 </template>
@@ -120,7 +106,6 @@ import slotNameDynamic from "./slotNameDynamic";
 import slotValueDefault from "./slotValueDefault";
 import slotClickEmitParent from "./slotClickEmitParent";
 import slotClickEmitChild from "./slotClickEmitChild";
-import slotClickEmitChildInterception from "./slotClickEmitChildInterception";
 
 export default {
   components: {
@@ -134,7 +119,6 @@ export default {
     slotValueDefault,
     slotClickEmitParent,
     slotClickEmitChild,
-    slotClickEmitChildInterception,
   },
   data() {
     return {
