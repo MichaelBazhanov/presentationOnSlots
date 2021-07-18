@@ -67,7 +67,9 @@
     <slotDefaultAbbreviatedSyntax v-slot:default="slotsProps" :items="arr" class="bg-purple-100">
       <h5>{{slotsProps.test}}</h5>
     </slotDefaultAbbreviatedSyntax>
-    <slotDefaultAbbreviatedSyntax v-slot:default="slotsProps" :items="arr">
+    <slotDefaultAbbreviatedSyntax :items="arr">
+      <!-- <slotDefaultAbbreviatedSyntax v-slot:default="slotsProps" :items="arr"> -->
+      <!-- //v-slot:default="slotsProps" не используется по этому error!!!-->
     </slotDefaultAbbreviatedSyntax>
 
     <hr class="bg-white h-1">
