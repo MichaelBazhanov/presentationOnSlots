@@ -1,41 +1,15 @@
-**Note: This project is deprecated.** It was never a very good starter for real projects since you don't want your CSS framework to dictate your starter webpack setup — better to use vue-cli, create-react-app, etc.
 
-We recommend using the [tailwindcss/playground](https://github.com/tailwindcss/playground) starter if you just want a simple project for playing around with Tailwind and PostCSS.
-
----
-
-# Tailwind CSS Webpack Starter Project
-
-This is an example of a super simple Webpack setup for using [Tailwind CSS](https://tailwindcss.com).
-
-To get started, clone the project and install the dependencies:
+**presentationOnSlots**
 
 ```
-# Using npm
-npm install
-
-# Using Yarn
-yarn
-```
-
-After that, start up Webpack Development Server:
+В данном проекте представлены компоненты для презентации по слотам в фреймворке Vue.js
 
 ```
-npm run dev
+#  GitHab presentation on slots (components)
 ```
-
-Webpack Development Server will watch `/src/styles.css` and `/tailwind.js` and rebuild your stylesheet on every change.
-
-You can play around with `/index.html` to see the effects of your changes.
-
-To build a production bundle run:
-
+`https://github.com/MichaelBazhanov/presentationOnSlots`
 ```
-npm run prod
+#  Google docs presentation on slots
 ```
-
-After that you will have a ready to deploy bundle at `/dist`
-
-## Contributing
-
-Have a lot of experience with Webpack and suggestions on how we could improve this starter template? We'd love a PR!
+`https://docs.google.com/presentation/d/1WWjjTOoZKYTxESWRAtQ3lOntwkxw-AnF42ndOA7Y9Vw/edit#slide=id.ge5a41a345e_0_41`
+```
