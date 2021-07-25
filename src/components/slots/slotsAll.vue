@@ -94,6 +94,24 @@
       </template>
     </slotClickEmitChild>
 
+    <hr class="bg-white h-1">
+
+    <slotInSlots>
+      <template>
+        <h1>slot 1</h1>
+        <slotInSlots>
+          <template>
+            <h2>slot 2</h2>
+            <slotInSlots>
+              <template>
+                <h3>slot 3</h3>
+              </template>
+            </slotInSlots>
+          </template>
+        </slotInSlots>
+      </template>
+    </slotInSlots>
+
   </div>
 </template>
 
@@ -108,6 +126,7 @@ import slotNameDynamic from "./slotNameDynamic";
 import slotValueDefault from "./slotValueDefault";
 import slotClickEmitParent from "./slotClickEmitParent";
 import slotClickEmitChild from "./slotClickEmitChild";
+import slotInSlots from "./slotInSlots";
 
 export default {
   components: {
@@ -121,6 +140,7 @@ export default {
     slotValueDefault,
     slotClickEmitParent,
     slotClickEmitChild,
+    slotInSlots,
   },
   data() {
     return {
